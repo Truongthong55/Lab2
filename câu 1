@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class kiemtrasochinhphuong {
+
+    
+    public static void main(String[]args){
+        Scanner input=new Scanner(System.in);
+        System.out.print("Nhap so chinh phuong: ");
+        String number = input.nextInt();
+        // căn bậc 2 
+        double squareRoot = sqrt(number);
+        //kiểm tra xem căn bậc 2 có phải là số nguyên hay không
+        if(squareRoot==(int)squareRoot){
+            System.out.println(number+"la so chinh phuong.");
+        } else{
+            System.out.println(number +"khong phai so chinh phuong.");           
+        }
+    }
+}
